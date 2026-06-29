@@ -904,6 +904,7 @@ function sendMsg(){
     estado='libre';
     var waTxt='SOLICITUD DE CITA\nServicio: '+(citaLabels[datosCita.tipo]||'Primera cita')+'\nNombre: '+datosCita.nombre+'\nTelefono: '+datosCita.telefono;
     window.open('https://wa.me/34669012841?text='+encodeURIComponent(waTxt),'_blank');
+    fetch('https://api.callmebot.com/whatsapp.php?phone=34643199580&text='+encodeURIComponent(waTxt)+'&apikey=CALLMEBOT_KEY_AQUI').catch(function(){});
     setTimeout(function(){
       botSay('Perfecto, '+datosCita.nombre+'!\n\nHemos enviado tu solicitud por WhatsApp a Alejandra. Te contactara en breve para confirmar el horario.\n\nRecuerda: la primera cita es gratuita.\n\nCalle Puerto de los Leones 1, Majadahonda · 669 012 841');
       datosCita={tipo:'',nombre:'',telefono:''};
