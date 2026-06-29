@@ -53,8 +53,9 @@ a{color:inherit;text-decoration:none}
 
 /* HERO */
 .hero{position:relative;height:100dvh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;padding:110px 52px 72px}
-.hero-bg{position:absolute;inset:0;z-index:0;background:url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1400') center/cover no-repeat}
-.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.97) 0%,rgba(0,0,0,.4) 55%,rgba(0,0,0,.1) 100%)}
+.hero-bg{position:absolute;inset:0;z-index:0;background:url("https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1400&h=900&dpr=1") center/cover no-repeat}
+.hero-bg video{width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(1.1)}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,15,10,.95) 0%,rgba(6,15,10,.25) 45%,rgba(6,15,10,.0) 100%)}
 .hero-in{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%}
 .hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border:1px solid #f9a8d4;border-radius:40px;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#f9a8d4;margin-bottom:22px;background:rgba(249,168,212,.1)}
 .hero-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--lav);animation:blink 1.8s infinite}
@@ -284,7 +285,11 @@ footer{background:#000;border-top:1px solid var(--border);padding:60px 52px 36px
 </nav>
 
 <section class="hero" id="top">
-  <div class="hero-bg"></div>
+  <div class="hero-bg">
+    <video autoplay muted loop playsinline preload="none" poster="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1400&h=900&dpr=1">
+      
+    </video>
+  </div>
   <div class="hero-in">
     <div class="hero-tag">
       <span class="dot"></span>
@@ -580,7 +585,7 @@ footer{background:#000;border-top:1px solid var(--border);padding:60px 52px 36px
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
 
       <a href="https://psicoysexologia.com/sexualidad-despues-del-divorcio/" target="_blank" style="background:#0a1a0f;border:1px solid rgba(249,168,212,.18);border-radius:20px;overflow:hidden;text-decoration:none;display:block;transition:transform .3s,border-color .3s" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='rgba(249,168,212,.5)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(249,168,212,.18)'">
-        <img src="https://psicoysexologia.com/wp-content/uploads/2020/03/1.jpg" alt="Sexualidad después del divorcio" style="width:100%;height:200px;object-fit:cover" loading="lazy">
+        <img src="https://images.pexels.com/photos/1367269/pexels-photo-1367269.jpeg?auto=compress&cs=tinysrgb&w=600&h=200&fit=crop" alt="Pareja separada" style="width:100%;height:200px;object-fit:cover">
         <div style="padding:24px">
           <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#f9a8d4;margin-bottom:8px">Sexualidad</div>
           <h3 style="font-family:'Anton',sans-serif;font-size:1.2rem;text-transform:uppercase;letter-spacing:-.01em;color:#f0fdf4;margin-bottom:10px">Sexualidad despues del divorcio</h3>
@@ -589,7 +594,7 @@ footer{background:#000;border-top:1px solid var(--border);padding:60px 52px 36px
       </a>
 
       <a href="https://psicoysexologia.com/hablemos-sobre-deseo-sexual/" target="_blank" style="background:#0a1a0f;border:1px solid rgba(249,168,212,.18);border-radius:20px;overflow:hidden;text-decoration:none;display:block;transition:transform .3s,border-color .3s" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='rgba(74,222,128,.5)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(249,168,212,.18)'">
-        <img src="https://psicoysexologia.com/wp-content/uploads/2020/03/5.jpg" alt="Deseo sexual" style="width:100%;height:200px;object-fit:cover" loading="lazy">
+        <img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600&h=200&fit=crop" alt="Pareja romantica" style="width:100%;height:200px;object-fit:cover">
         <div style="padding:24px">
           <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#4ade80;margin-bottom:8px">Deseo</div>
           <h3 style="font-family:'Anton',sans-serif;font-size:1.2rem;text-transform:uppercase;letter-spacing:-.01em;color:#f0fdf4;margin-bottom:10px">Hablemos sobre deseo sexual</h3>
@@ -598,7 +603,7 @@ footer{background:#000;border-top:1px solid var(--border);padding:60px 52px 36px
       </a>
 
       <a href="https://psicoysexologia.com/el-orgasmo-femenino-mitos-y-verdades/" target="_blank" style="background:#0a1a0f;border:1px solid rgba(249,168,212,.18);border-radius:20px;overflow:hidden;text-decoration:none;display:block;transition:transform .3s,border-color .3s" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='rgba(249,168,212,.5)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(249,168,212,.18)'">
-        <img src="https://psicoysexologia.com/wp-content/uploads/2020/03/6.jpg" alt="Orgasmo femenino" style="width:100%;height:200px;object-fit:cover" loading="lazy">
+        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=600&h=200&fit=crop" alt="Mujer feliz" style="width:100%;height:200px;object-fit:cover">
         <div style="padding:24px">
           <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#f9a8d4;margin-bottom:8px">Sexualidad</div>
           <h3 style="font-family:'Anton',sans-serif;font-size:1.2rem;text-transform:uppercase;letter-spacing:-.01em;color:#f0fdf4;margin-bottom:10px">El orgasmo femenino: mitos y verdades</h3>
@@ -607,7 +612,7 @@ footer{background:#000;border-top:1px solid var(--border);padding:60px 52px 36px
       </a>
 
       <a href="https://psicoysexologia.com/que-es-la-ansiedad/" target="_blank" style="background:#0a1a0f;border:1px solid rgba(249,168,212,.18);border-radius:20px;overflow:hidden;text-decoration:none;display:block;transition:transform .3s,border-color .3s" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='rgba(74,222,128,.5)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(249,168,212,.18)'">
-        <img src="https://psicoysexologia.com/wp-content/uploads/2020/03/4.jpg" alt="Ansiedad" style="width:100%;height:200px;object-fit:cover" loading="lazy">
+        <img src="https://images.pexels.com/photos/897817/pexels-photo-897817.jpeg?auto=compress&cs=tinysrgb&w=600&h=200&fit=crop" alt="Ansiedad" style="width:100%;height:200px;object-fit:cover">
         <div style="padding:24px">
           <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#4ade80;margin-bottom:8px">Psicologia</div>
           <h3 style="font-family:'Anton',sans-serif;font-size:1.2rem;text-transform:uppercase;letter-spacing:-.01em;color:#f0fdf4;margin-bottom:10px">Que es la ansiedad</h3>
@@ -616,7 +621,7 @@ footer{background:#000;border-top:1px solid var(--border);padding:60px 52px 36px
       </a>
 
       <a href="https://psicoysexologia.com/el-duelo/" target="_blank" style="background:#0a1a0f;border:1px solid rgba(249,168,212,.18);border-radius:20px;overflow:hidden;text-decoration:none;display:block;transition:transform .3s,border-color .3s" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='rgba(249,168,212,.5)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(249,168,212,.18)'">
-        <img src="https://psicoysexologia.com/wp-content/uploads/2020/03/3.jpg" alt="El duelo" style="width:100%;height:200px;object-fit:cover" loading="lazy">
+        <img src="https://images.pexels.com/photos/236151/pexels-photo-236151.jpeg?auto=compress&cs=tinysrgb&w=600&h=200&fit=crop" alt="El duelo" style="width:100%;height:200px;object-fit:cover">
         <div style="padding:24px">
           <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#f9a8d4;margin-bottom:8px">Psicologia</div>
           <h3 style="font-family:'Anton',sans-serif;font-size:1.2rem;text-transform:uppercase;letter-spacing:-.01em;color:#f0fdf4;margin-bottom:10px">El duelo</h3>
@@ -625,7 +630,7 @@ footer{background:#000;border-top:1px solid var(--border);padding:60px 52px 36px
       </a>
 
       <a href="https://psicoysexologia.com/si-no-te-ha-pegado-no-es-maltrato/" target="_blank" style="background:#0a1a0f;border:1px solid rgba(249,168,212,.18);border-radius:20px;overflow:hidden;text-decoration:none;display:block;transition:transform .3s,border-color .3s" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='rgba(74,222,128,.5)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(249,168,212,.18)'">
-        <img src="https://psicoysexologia.com/wp-content/uploads/2020/03/2.jpg" alt="Maltrato" style="width:100%;height:200px;object-fit:cover" loading="lazy">
+        <img src="https://images.pexels.com/photos/247204/pexels-photo-247204.jpeg?auto=compress&cs=tinysrgb&w=600&h=200&fit=crop" alt="Mujer fuerte" style="width:100%;height:200px;object-fit:cover">
         <div style="padding:24px">
           <div style="font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#4ade80;margin-bottom:8px">Relaciones</div>
           <h3 style="font-family:'Anton',sans-serif;font-size:1.2rem;text-transform:uppercase;letter-spacing:-.01em;color:#f0fdf4;margin-bottom:10px">Si no te ha pegado no es maltrato</h3>
